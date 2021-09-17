@@ -1,0 +1,17 @@
+<script>
+
+
+    window.localStorage.setItem("key1","Hello_1");
+    window.sessionStorage.setItem("key2","Hello_2");
+
+
+    document.cookie = "key1=Hello_1";
+     document.cookie="key2=Hello_2;expires="+new Date(2021,8,18).toUTCString();
+
+
+
+    //to remove the cookies.
+
+    document.cookie = "key1=";
+    console.log( document.cookie );
+</script>
